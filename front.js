@@ -35,5 +35,3 @@ form.addEventListener("submit", async (e) => {
   messagesDiv.appendChild(msg);
   messagesDiv.scrollTop = messagesDiv.scrollHeight;
  }
- }
-
