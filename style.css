@@ -23,7 +23,7 @@ h1 {
 
 .main-container {
   margin: 45px;
-  height: 95%; max-width: 95%;
+  height: 900px; max-width: 700px;
   border: 2px dashed #ff0000;
   padding: 20px;
   background: #111;
