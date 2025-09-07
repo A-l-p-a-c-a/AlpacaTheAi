@@ -70,3 +70,43 @@ button {
 button:hover {
   background: #ff4444;
 }
+
+/* Disclaimer crawl */
+.disclaimer {
+  position: relative;
+  width: 100%;
+  height: 200px;   /* how much space it scrolls through */
+  overflow: hidden;
+  background: black;
+  border-top: 2px solid red;
+  border-bottom: 2px solid red;
+}
+
+.disclaimer p {
+  position: absolute;
+  bottom: -100%;    /* start off screen */
+  width: 90%;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: red;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  animation: crawlUp 30s linear forwards; /* one-time animation */
+}
+
+/* Star Wars-style crawl */
+@keyframes crawlUp {
+  0% {
+    bottom: -100%;
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    bottom: 120%; /* out the top */
+    opacity: 0;
+  }
+}
