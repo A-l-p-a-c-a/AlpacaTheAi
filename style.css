@@ -43,7 +43,7 @@ body {
 }
 
   p {
-  font-size: 10rem; /* Sets the font size to 16 pixels */
+  font-size: 2rem; /* Sets the font size to 16 pixels */
   }
 
 h1 {
@@ -55,7 +55,7 @@ h1 {
 
 .responsive-container {
   width: 100%%; /* Scales fluidly up to a maximum of 1200px */
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto; /* Centers the container */
 }
 
