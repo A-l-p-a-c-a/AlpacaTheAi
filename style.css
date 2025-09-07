@@ -48,7 +48,8 @@ body {
 }
 
 .chatbox {
-  max-width: 700px;
+  width: 700px;
+  height: 1500px;
   margin: 2px auto;
   background: #000;
   padding: 15px;
