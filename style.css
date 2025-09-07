@@ -7,19 +7,36 @@ body {
   text-align: center;
 }
 
-.header,
+.header {
+  height: 700px;
+  width: 695px; 
+  background: #111;
+  padding: 30px;           /* makes the header taller */
+  border: 3px solid #ff0000;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 32px;         /* bigger title */
+  margin: 0;
+  color: #ff0000;
+  text-transform: uppercase;
+}
+
 .footer {
+  height: 700px;
+  width: 695px;  
   background: #111;
   padding: 15px;
   border: 2px solid #ff0000;
 }
 
-h1 {
-  font-size: 2rem;   /* smaller than default */
-  color: #ff0000;    /* keep your red */
+/*h1 {
+  font-size: 2rem;   smaller than default
+  color: #ff0000;    keep your red 
   margin: 10px 0;
   text-align: center;
-}
+}*/
 
 .main-container {
   margin: 45px;
