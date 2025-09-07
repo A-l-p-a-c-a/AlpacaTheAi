@@ -16,7 +16,7 @@ body {
 
 .header {
   background: #111;
-  border: 10px solid #ff0000;
+  border: 2px solid #ff0000;
   text-align: center;
 
   /* control size */
@@ -31,12 +31,12 @@ body {
 
 .footer {
   background: #111;
-  border: 3px solid #ff0000;
+  border: 2px solid #ff0000;
   text-align: center;
 
   /* control size */
   width: 100%;     /* full screen width */
-  height: 400px;   /* make footer taller */
+  height: 500px;   /* make footer taller */
 
   /* optional: center contents vertically */
   display: flex;
@@ -45,13 +45,13 @@ body {
 }
 
   p {
-  font-size: 2rem; /* Sets the font size to 16 pixels */
+  font-size: 1rem; /* Sets the font size to 16 pixels */
   }
 
 h1 {
-  font-size: 2rem;   /* smaller than default */
+  font-size: 1rem;   /* smaller than default */
   color: #ff0000;    /* keep your red */
-  margin: 10px 0;
+  margin: 5px 0;
   text-align: center;
 }
 
@@ -72,7 +72,7 @@ h1 {
 
 .chatbox {
   max-width: 100%;
-  height: 60%;
+  height: 70%;
   margin: 0 auto;
   background: #000;
   padding: 15px;
