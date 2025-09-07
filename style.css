@@ -8,7 +8,7 @@ body {
 }
 
 .header {
-  height: 700px;
+  height: 200px;
   width: 695px; 
   background: #111;
   padding: 30px;           /* makes the header taller */
