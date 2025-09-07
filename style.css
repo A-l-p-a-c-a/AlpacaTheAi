@@ -53,6 +53,13 @@ h1 {
   text-align: center;
 }
 
+.responsive-container {
+  width: 100%%; /* Scales fluidly up to a maximum of 1200px */
+  max-width: 1200px;
+  margin: 0 auto; /* Centers the container */
+}
+
+
 .main-container {
   margin: 30px;
   height: 95%; max-width: 95%;
