@@ -38,7 +38,7 @@ body {
 }
 
 h1 {
-  font-size: 4rem;   /* smaller than default */
+  font-size: 3rem;   /* smaller than default */
   color: #ff0000;    /* keep your red */
   margin: 10px 0;
   text-align: center;
