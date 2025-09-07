@@ -23,7 +23,8 @@ h1 {
 
 .main-container {
   margin: 45px;
-  height: 2000%; max-width: 700px;
+  height: 2000%; 
+  max-width: 700px;
   border: 2px dashed #ff0000;
   padding: 20px;
   background: #111;
@@ -31,8 +32,7 @@ h1 {
 
 .chatbox {
   max-width: 600px;
-  height: 1500px;
-  margin: 0 auto;
+  margin: 20px auto;
   background: #000;
   padding: 15px;
   border: 2px solid #ff0000;
