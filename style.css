@@ -14,7 +14,7 @@ body {
 
   /* control size */
   width: 100%;     /* makes it stretch across the screen */
-  height: 400px;   /* adjust this number to make it taller */
+  height: 200px;   /* adjust this number to make it taller */
 
   /* optional: center contents vertically */
   display: flex;
