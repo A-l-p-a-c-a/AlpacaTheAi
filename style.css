@@ -75,7 +75,7 @@ button:hover {
 .disclaimer {
   position: relative;
   width: 100%;
-  height: 200px;   /* how much space it scrolls through */
+  height: 250px;          /* taller crawl area */
   overflow: hidden;
   background: black;
   border-top: 2px solid red;
@@ -84,19 +84,19 @@ button:hover {
 
 .disclaimer p {
   position: absolute;
-  bottom: -100%;    /* start off screen */
+  bottom: -100%;          /* start off the screen */
   width: 90%;
   margin: 0 auto;
   left: 0;
   right: 0;
   text-align: center;
   color: red;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  animation: crawlUp 30s linear forwards; /* one-time animation */
+  font-size: 1.1rem;
+  line-height: 1.6rem;
+  animation: crawlUp 25s linear forwards; /* crawl lasts 25 seconds */
 }
 
-/* Star Wars-style crawl */
+/* Crawl keyframes */
 @keyframes crawlUp {
   0% {
     bottom: -100%;
@@ -106,7 +106,7 @@ button:hover {
     opacity: 1;
   }
   100% {
-    bottom: 120%; /* out the top */
+    bottom: 120%;          /* go fully off top of screen */
     opacity: 0;
   }
 }
