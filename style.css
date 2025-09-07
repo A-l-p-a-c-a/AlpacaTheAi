@@ -1,5 +1,6 @@
 body {
   font-family: 'Impact', sans-serif;
+  font-size: 100%;
   background: #000;
   color: #ff0000;
   margin: 0;
@@ -42,6 +43,10 @@ h1 {
   color: #ff0000;    /* keep your red */
   margin: 10px 0;
   text-align: center;
+}
+
+  p {
+  font-size: 3rem; /* Sets the font size to 16 pixels */
 }
 
 .main-container {
