@@ -7,50 +7,31 @@ body {
   text-align: center;
 }
 
-.header {
-  height: 100px;
-  width: 800px; 
-  background: #111;
-  padding: 30px;           /* makes the header taller */
-  border: 3px solid #ff0000;
-  text-align: center;
-}
-
-.header h1 {
-  font-size: 32px;         /* bigger title */
-  margin: 0;
-  color: #ff0000;
-  text-transform: uppercase;
-}
-
+.header,
 .footer {
-  height: 700px;
-  width: 695px;  
   background: #111;
   padding: 15px;
   border: 2px solid #ff0000;
 }
 
-/*h1 {
-  font-size: 2rem;   smaller than default
-  color: #ff0000;    keep your red 
+h1 {
+  font-size: 2rem;   /* smaller than default */
+  color: #ff0000;    /* keep your red */
   margin: 10px 0;
   text-align: center;
-}*/
+}
 
 .main-container {
-  margin: 45px;
-  height: 2000%; 
-  max-width: 700px;
+  margin: 30px;
+  height: 95%; max-width: 95%;
   border: 2px dashed #ff0000;
   padding: 20px;
   background: #111;
 }
 
 .chatbox {
-  width: 700px;
-  height: 1500px;
-  margin: 2px auto;
+  max-width: 100%;
+  margin: 0 auto;
   background: #000;
   padding: 15px;
   border: 2px solid #ff0000;
