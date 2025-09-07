@@ -8,6 +8,10 @@ body {
   text-align: center;
 }
 
+.main-content {
+  width: 100%%; /* Takes up 70% of its parent's width */
+}
+
 .header {
   background: #111;
   border: 3px solid #ff0000;
@@ -38,15 +42,15 @@ body {
   justify-content: center;
 }
 
+  p {
+  font-size: 3rem; /* Sets the font size to 16 pixels */
+  }
+
 h1 {
   font-size: 3rem;   /* smaller than default */
   color: #ff0000;    /* keep your red */
   margin: 10px 0;
   text-align: center;
-}
-
-  p {
-  font-size: 3rem; /* Sets the font size to 16 pixels */
 }
 
 .main-container {
