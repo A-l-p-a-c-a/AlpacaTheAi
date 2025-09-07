@@ -48,7 +48,7 @@ h1 {
   font-family: monospace;
   font-size: 14px;
   color: #ff0000;
-  font-size: 16px;   /* chat text larger but not huge */
+  font-size: 22px;   /* chat text larger but not huge */
   line-height: 1.4;
   
 }
@@ -65,7 +65,7 @@ h1 {
   font-family: monospace;
   background: #191919;
   color: #fff;
-  font-size: 18px;
+  font-size: 24px;
 }
 
 button {
