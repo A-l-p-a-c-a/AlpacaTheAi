@@ -8,7 +8,7 @@ body {
 
 }
 
-/* Main chat container */
+/* Main chat container 
 
 .main-container {
   margin: 40px auto;
@@ -20,10 +20,11 @@ body {
 }
 
 /* Chatbox BIGGER */
-
+}
 
 .chatbox {
-  max-width: 800px;
+  width: 800px;
+  width: 900px;
   margin: 20px auto;
   background: #000;
   padding: 20px;
@@ -92,4 +93,17 @@ button:hover {
     padding: 20px; /* Add padding for spacing */
   }
 
-  /* Other styles for your text or objects can be 
+  /* Other styles for your text or objects can /* Drawing board styling */
+.drawing-board {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  background-color: white; /* White background for the drawing area */
+}
+
+#canvas {
+  border: 1px solid #ddd; /* Optional: Border around the canvas */
+  background-color: white; /* Background color for the canvas */
+}
+
