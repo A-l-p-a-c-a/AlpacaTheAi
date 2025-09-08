@@ -46,8 +46,8 @@ body {
   border-radius: 8px;
 }
 
+
 /* Chatbox BIGGER */
-}
 
 .chatbox {
   width: 700px;
@@ -58,6 +58,7 @@ body {
   border: 2px solid ##D7036A;
   text-align: left;
 }
+
 
 #messages {
   height: 500px;   /* BIGGER chat window */
@@ -71,11 +72,25 @@ body {
   color: ###FF0FBF;
 }
 
+.user-message {
+    background-color: #007bff;
+    color: white;
+    align-self: flex-end;
+    border-bottom-right-radius: 0;
+}
+
+.ai-message {
+    background-color: #e9ecef;
+    color: #333;
+    align-self: flex-start;
+    border-bottom-left-radius: 0;
+}
 #chatForm {
   display: flex;
 }
 
-#userInput {
+
+#user-input {
   flex: 1;
   padding: 12px;
   font-size: 16px;
