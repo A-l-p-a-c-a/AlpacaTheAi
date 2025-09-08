@@ -38,8 +38,8 @@ body {
 
 .main-container {
   margin: 40px auto;
-  max-width: 800px;
-  height:900px;
+  max-width: 500px;
+  height:600px;
   background: #111;
   border: 3px dashed ##f000ff;
   padding: 30px;
