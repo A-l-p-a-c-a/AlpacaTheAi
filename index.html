@@ -53,6 +53,20 @@
 </div>
 </div></div>
 
-  <script src="front.js"></script>
+<script>
+  const overlay = document.getElementById("overlay");
+  const enterBtn = document.getElementById("enterBtn");
+
+  // Click button removes overlay
+  enterBtn.addEventListener("click", () => {
+    overlay.style.display = "none";
+  });
+
+  // Optional: auto remove after 20s if no click
+  setTimeout(() => {
+    overlay.style.display = "none";
+  }, 20000);
+</script>
+<script src="front.js"></script>
 </body>
 </html>
