@@ -96,8 +96,36 @@ button:hover {
 .magazine-gallery img:hover {
   transform: scale(1.1);
 }
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
 
-/* Overlay full screen */
+.popup-content {
+    background-color: #fff;
+    width: 50%;
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.close {
+    float: right;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: red;
+}
+/* Overlay full screen 
 #overlay {
   position: fixed;
   top: 0;
@@ -123,20 +151,20 @@ button:hover {
   animation: crawlUp 15s linear forwards;
 }
 
-/* Fade in overlay */
+Fade in overlay 
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
 }
 
-/* Crawl effect */
+Crawl effect 
 @keyframes crawlUp {
   0% { transform: translateY(100%); opacity: 0; }
   10% { opacity: 1; }
   100% { transform: translateY(-120%); opacity: 0; }
 }
 
-/* Button */
+Button 
 #enterBtn {
   margin-top: 20px;
   padding: 10px 20px;
@@ -144,6 +172,6 @@ button:hover {
   border: none;
   color: black;
   font-weight: bold;
-  cursor: pointer;
-}
+  cursor: pointer; 
+} */
 
