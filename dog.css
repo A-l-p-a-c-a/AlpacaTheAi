@@ -1,12 +1,38 @@
 body {
   font-family: 'Verdana', sans-serif;
   background: #000;
-  color: #ff0000;
+  color: #ff0ff;
   margin: 0;
   padding: 0;
   text-align: center;
 
 }
+ .sidebar {
+      width: 30px;
+      background-color: #03A9F4; /* Blue background */
+      color: white;
+      padding: 20px;
+      transition: width 0.3s;
+    }
+
+    .sidebar:hover {
+      width: 150px;
+    }
+
+    .sidebar ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .sidebar li {
+      margin-bottom: 10px;
+    }
+
+    .sidebar a {
+      color: white;
+      text-decoration: none;
+    }
 
 /* Main chat container 
 
