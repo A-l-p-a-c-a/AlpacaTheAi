@@ -37,8 +37,8 @@ body {
 /* Main chat container */
 }
 .main-container {
-  margin: 40px auto;
-  max-width: 500px;
+  margin: 20px auto;
+  width: 100%px;
   height:600px;
   background: #111;
   border: 3px dashed ##f000ff;
