@@ -34,11 +34,12 @@ body {
       text-decoration: none;
     }
 
-/* Main chat container 
+/* Main chat container */
 
 .main-container {
   margin: 40px auto;
-  max-width: 900px;
+  max-width: 8000px;
+  height:900px;
   background: #111;
   border: 3px dashed ##f000ff;
   padding: 30px;
@@ -59,7 +60,7 @@ body {
 }
 
 #messages {
-  height: 400px;   /* BIGGER chat window */
+  height: 800px;   /* BIGGER chat window */
   overflow-y: auto;
   background: #111;
   padding: 15px;
@@ -124,7 +125,8 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Full viewport height */
+  height: 900vh;  /* Full viewport height */
+  width: 800px;
   background-color: white; /* White background for the drawing area */
 }
 
