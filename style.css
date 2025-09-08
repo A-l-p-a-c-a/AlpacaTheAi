@@ -76,7 +76,7 @@ button:hover {
   background: #ff4444;
 }
 
-/* Magazine gallery */
+ Magazine gallery */
 .magazine-gallery {
   display: flex;
   justify-content: center;
@@ -96,7 +96,71 @@ button:hover {
 .magazine-gallery img:hover {
   transform: scale(1.1);
 }
-.popup {
+
+
+
+/* Container for the entire overlay */
+.rolling-text-overlay {
+  /* Positions the element relative to the browser window */
+  position: fixed; 
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%); /* Centers the overlay horizontally */
+  z-index: 1000; /* Ensures it is on top of other content */
+}
+
+/* Container for the image and text */
+.overlay-content {
+  position: relative; /* All child elements will be positioned relative to this container */
+  width: 500px; /* Adjust width as needed */
+}
+
+/* Style for the transparent image */
+.transparent-image {
+  width: 100%;
+  height: auto;
+  opacity: 0.5; /* Sets transparency. 1 is opaque, 0 is fully transparent */
+}
+
+/* Container for the rolling text */
+.text-container {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 20%; /* Adjust height to control the visible rolling text area */
+  overflow: hidden;
+  text-align: center;
+  transform: translateY(-50%);
+}
+
+/* Style for the text that is rolling */
+.rolling-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  font-family: sans-serif;
+  white-space: nowrap; /* Prevents text from wrapping to the next line */
+  font-size: 24px;
+  animation: roll 15s linear infinite; /* Applies the rolling animation */
+}
+
+/* Defines the rolling animation */
+@keyframes roll {
+  0% { transform: translateX(100%); } /* Starts off-screen to the right */
+  100% { transform: translateX(-100%); } /* Rolls across to off-screen left */
+}
+
+/* Basic styling for the rest of your webpage */
+.main-content {
+  padding: 200px;
+  font-family: sans-serif;
+}
+
+
+
+/*.popup {
     display: none;
     position: fixed;
     top: 0;
@@ -115,7 +179,7 @@ button:hover {
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    text-align: center; /* Center the image */
+    text-align: center; /* Center the image 
 }
 
 .close {
