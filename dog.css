@@ -1,7 +1,7 @@
 body {
   font-family: 'Verdana', sans-serif;
-  background: #000;
-  color: #ff0ff;
+  background: ##0bff01;
+  color: ##B035F8;
   margin: 0;
   padding: 0;
   text-align: center;
@@ -38,7 +38,7 @@ body {
 }
 .main-container {
   margin: 20px auto;
-  width: 100%;
+  width: 1000px;
   height:600px;
   background: #0F1;
   border: 3px dashed ##022B6D;
@@ -68,7 +68,7 @@ body {
   margin-bottom: 15px;
   font-family: monospace;
   font-size: 16px;
-  color: ##f000ff;
+  color: ###FF0FBF;
 }
 
 #chatForm {
@@ -87,7 +87,7 @@ body {
 
 button {
   background: #C70FFF;
-  color: #C00;
+  color: #000;
   font-weight: bold;
   border: none;
   cursor: pointer;
@@ -96,12 +96,12 @@ button {
 }
 
 button:hover {
-  background: ##fdfe02;
+  background: ###ffaa00;
 }
 
 
 .page-container {
-    background-color: #f0f0f0; /* Set your desired background color */
+    background-color: ##00aaff; /* Set your desired background color */
     padding: 20px; /* Adjust as needed */
   }
 
@@ -115,23 +115,23 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white; /* Set the background color for your grid items */
-    border: 1px solid black; /* Add border for clarity */
+    background-color: #aa00ff; /* Set the background color for your grid items */
+    border: 15px #ff00aa; /* Add border for clarity */
     padding: 20px; /* Add padding for spacing */
   }
 
-  /* Other styles for your text or objects can /* Drawing board styling */
+  /* Other styles for your text or objects can /* Drawing board styling 
 .drawing-board {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 900vh;  /* Full viewport height */
+  height: 900vh;  /* Full viewport height 
   width: 800px;
-  background-color: white; /* White background for the drawing area */
+  background-color: white; White background for the drawing area 
 }
 
 #canvas {
-  border: 1px solid #ddd; /* Optional: Border around the canvas */
+  border: 1px solid #ddd; Optional: Border around the canvas 
   background-color: white; /* Background color for the canvas */
 }
 
