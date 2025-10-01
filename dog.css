@@ -60,7 +60,7 @@
 }
 
 .page-container {
-    background-color: ###0000cc; /* Set your desired background color */
+    background-color: ##0000cc; /* Set your desired background color */
    justify-content: center;
    align-items: center;
     padding: 5px; /* Adjust as needed */
@@ -89,7 +89,7 @@
   margin: 3px auto;
   width: 800x;
   height:1700px;
-  background: #000033;
+  background: ##000033;
   border: 3px dashed ##022B6D;
  justify-content: center;
   align-items: center;
