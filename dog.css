@@ -1,57 +1,82 @@
 /*dog.css*/
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <link rel="stylesheet" href="dog.css">
+htmlhtml, body { 
+font-family: Verdana, sans-serif; height: 100%; overscroll-behavior-y: contain; margin: 0px; padding: 0px; text-align: center;
+ }
 
-</head>
-<body>
+.chat-wrap {
+ position: relative; min-height: 100vh; padding: 24px; display: grid; place-items: center; overflow: hidden;
+ }
 
-<div class="page-container">
-  <!-- Background color container -->
-  <div class="grid-container">
-    <div class="container">I
-    <div class="main-container">
-    <p style="text-align: center;"></p><h2></h2><p></p>he&gt;🥀 ÝÝÝ 🦙<p></p>
-    <div class="chatbox">
-      <div id="messages"><div><strong>YOU:</strong> Hello</div><div><strong>ALPACA:</strong> Hello! How can I help you today?</div><div><strong>YOU:</strong> Hello</div><div><strong>ALPACA:</strong> Hello! How can I help you today? 😊</div></div>
-      <form id="chatForm" autocomplete="off">
-        <input type="text" id="userInput" placeholder="Talk to ALPACA..." required="">
-        <button type="submit">Send</button>
-      </form>
-  </div></div>
-   <!-- <div class="container">. <div class="sidebar">
-      <h2>Sidebar</h2>.<div>-->
-    <!--<div class="container"></div> <!--<div class="drawing-board">
-      <canvas id="canvas"></canvas>
-    </div>
-    <div class="container">   <div class="sidebar">
-      <h2>Sidebar</h2></div>
-    <!--<div class="container">Item 5</div>
-    <div class="container">Item 6</div>
-    <div class="container"></div>
-    <div class="container"></div>
-    <div class="container"></div>
-  </div>-->
+.chat-wrap::before { content: ""; position: absolute; inset: 0px; background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("your-image.jpg") center center / cover no-repeat; z-index: 0;
+ }
 
-  <!-- Other text or objects can be added here -->
-  <p>This is some text around the grid.</p>
-</div>
+.sidebar {
+ width: 30px; background-color: rgb(3, 169, 244); color: white; padding: 20px; transition: width 0.3s;
+ }
 
-<img src="https://a-l-p-a-c-a.github.io/AlpacaTheAi/images/sergent.png">
-  
+.sidebar:hover { 
+width: 150px;
+ }
 
+.sidebar ul {
+ list-style-type: none; margin: 0px; padding: 0px; 
+}
 
+.sidebar li { 
+margin-bottom: 10px;
+ }
 
-</div></div></body></html></section>
-  
+.sidebar a { 
+color: white; text-decoration: none; 
+}
 
-  <!-- Other text or objects can be added here -->
-  <p>This is some text around the grid.</p>
-</div>
-  <script src="style.js"></script>
-<img src="images/sergent.png">
-  <script src="front.js"></script>
+.chat-box {
+ position: relative; z-index: 1; width: 700px; height: 600px; overflow: hidden; border-radius: 20px; border: 2px solid rgba(255, 255, 255, 0.12); box-shadow: rgba(0, 0, 0, 0.5) 0px 10px 30px; background: rgba(10, 20, 40, 0.8); text-align: left; backdrop-filter: blur(6px);
+ }
 
-</body>
+#messages { 
+height: 500px; overflow-y: auto; background: rgb(17, 51, 102); padding: 15px; margin-bottom: 15px; font-family: monospace; font-size: 16px; 
+}
+
+.chat-body { 
+height: min(60vh, 520px); overflow: auto; padding: 16px; 
+}
+
+.chat-footer { 
+position: sticky; bottom: 0px; display: grid; grid-template-columns: 1fr auto; gap: 8px; background: rgba(15, 25, 45, 0.96); padding: 12px 16px;
+ }
+
+input, button { 
+font: inherit; padding: 10px 12px; border-radius: 12px; border: 0px; 
+}
+
+button { 
+cursor: pointer;
+ }
+
+.user-message { background-color: rgb(0, 123, 255); color: white; align-self: flex-end; border-bottom-right-radius: 0px; 
+}
+
+.ai-message { 
+background-color: rgb(233, 236, 239); color: rgb(51, 51, 51); align-self: flex-start; border-bottom-left-radius: 0px; 
+}
+
+#chatForm { 
+display: flex; 
+}
+
+button { 
+background: rgb(199, 15, 255); color: rgb(0, 0, 0); font-weight: bold; border: none; cursor: pointer; padding: 12px 25px; transition: 0.2s;
+ }
+
+.page-container { 
+padding: 20px;
+ }
+
+.grid-container {
+ display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; 
+}
+
+.container {
+ display: flex; justify-content: center; align-items: center; background-color: rgb(170, 0, 255); border: 15px rgb(255, 0, 170); padding: 20px;
+}
