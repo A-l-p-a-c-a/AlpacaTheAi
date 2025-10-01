@@ -32,7 +32,7 @@ h1 {
 .subtext {
   text-align: center;
   font-size: 0.9rem;
-  color: #white;
+  color: #aaa;
   margin-bottom: 20px;
 }
 
@@ -67,14 +67,14 @@ h1 {
 
 .user-msg {
   background-color: #ff6f61;
-  color: #white;
+  color: #fff;
   align-self: flex-end;
   border-bottom-right-radius: 3px;
 }
 
 .alpaca-msg {
   background-color: #3a3a3a;
-  color: #white;
+  color: #f2f2f2;
   align-self: flex-start;
   border-bottom-left-radius: 3px;
 }
@@ -99,7 +99,7 @@ h1 {
   padding: 10px 15px;
   border: none;
   background-color: #ff6f61;
-  color: #white;
+  color: #fff;
   font-weight: bold;
   border-radius: 0 5px 5px 0;
   cursor: pointer;
