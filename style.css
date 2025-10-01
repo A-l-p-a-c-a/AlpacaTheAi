@@ -14,7 +14,7 @@ body {
   width: 90%;
   max-width: 600px;
   background-color: #black;
-  border: 2px solid #white;
+  border: 2px solid #fff;
   border-radius: 12px;
   padding: 20px;
   box-shadow: 0 0 15px #444;
@@ -46,7 +46,7 @@ h1 {
 }
 .chat-box {
   background-color: #black;
-  border: 1px solid #white;
+  border: 1px solid #fff;
   border-radius: 8px;
   padding: 10px;
   height: 300px;
@@ -67,14 +67,14 @@ h1 {
 
 .user-msg {
   background-color: #black;
-  color: #white;
+  color: #fff;
   align-self: flex-end;
   border-bottom-right-radius: 3px;
 }
 
 .alpaca-msg {
   background-color: #black;
-  color: #white;
+  color: #fff;
   align-self: flex-start;
   border-bottom-left-radius: 3px;
 }
@@ -99,7 +99,7 @@ h1 {
   padding: 10px 15px;
   border: none;
   background-color: #black;
-  color: #white;
+  color: #fff;
   font-weight: bold;
   border-radius: 0 5px 5px 0;
   cursor: pointer;
