@@ -59,6 +59,21 @@
 /* Main chat container */
 }
 
+.page-container {
+    background-color: #000000; /* Set your desired background color */
+    padding: 5px; /* Adjust as needed */
+}
+
+.grid-container {
+    display: grid;
+ width:800px;
+ height: 1700px;
+ justify-content: center;
+  align-items: center;
+ grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns */
+    gap: 10px; /* Adjust the gap between items */
+}
+
 .main-container {
   margin: 3px auto;
   width: 800x;
@@ -71,7 +86,6 @@
 
 /* Chatbox BIGGER */
 /* The chat box */
-
 .chat-box {
   position: relative;
   z-index: 1;
@@ -151,21 +165,6 @@ button {
   padding: 12px 25px;
   transition: 0.2s;
 }
-
-.page-container {
-    background-color: ##00aaff; /* Set your desired background color */
-    padding: 20px; /* Adjust as needed */
-  }
-
-.grid-container {
-    display: grid;
- width:800px;
- height: 1700px;
- justify-content: center;
-  align-items: center;
- grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns */
-    gap: 10px; /* Adjust the gap between items */
-  }
 
   .container {
     display: flex;
