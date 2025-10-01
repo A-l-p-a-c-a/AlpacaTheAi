@@ -14,7 +14,7 @@ body {
   width: 90%;
   max-width: 600px;
   background-color: #black;
-  border: 2px solid #FF5F1F;
+  border: 2px solid #white;
   border-radius: 12px;
   padding: 20px;
   box-shadow: 0 0 15px #444;
@@ -32,7 +32,7 @@ h1 {
 .subtext {
   text-align: center;
   font-size: 0.9rem;
-  color: #E6E6FA;
+  color: #black;
   margin-bottom: 20px;
 }
 
@@ -46,7 +46,7 @@ h1 {
 }
 .chat-box {
   background-color: #black;
-  border: 1px solid #F5FEDC;
+  border: 1px solid #white;
   border-radius: 8px;
   padding: 10px;
   height: 300px;
@@ -66,15 +66,15 @@ h1 {
 }
 
 .user-msg {
-  background-color: #white;
-  color: #black;
+  background-color: #black;
+  color: #white;
   align-self: flex-end;
   border-bottom-right-radius: 3px;
 }
 
 .alpaca-msg {
-  background-color: #white;
-  color: #black;
+  background-color: #black;
+  color: #white;
   align-self: flex-start;
   border-bottom-left-radius: 3px;
 }
@@ -90,7 +90,7 @@ h1 {
   border: none;
   border-radius: 5px 0 0 5px;
   font-size: 1rem;
-  background-color: #white;
+  background-color: #pini;
   color: #black;
 }
 
@@ -107,7 +107,7 @@ h1 {
 
 
 #sendBtn:hover {
-  background-color: #ff3b2e;
+  background-color: #pink;
 }
 
 @keyframes breathe {
