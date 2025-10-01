@@ -13,7 +13,7 @@ body {
 .chat-container {
   width: 90%;
   max-width: 600px;
-  background-color: #FF10F0;
+  background-color: #black;
   border: 2px solid #FF5F1F;
   border-radius: 12px;
   padding: 20px;
@@ -25,14 +25,14 @@ h1 {
   text-align: center;
   margin: 0;
   font-size: 2rem;
-  color: #ff6f61;
+  color: #white;
 }
 
 
 .subtext {
   text-align: center;
   font-size: 0.9rem;
-  color: #aaa;
+  color: #E6E6FA;
   margin-bottom: 20px;
 }
 
@@ -45,7 +45,7 @@ h1 {
   animation: breathe 4s ease-in-out infinite;
 }
 .chat-box {
-  background-color: #1F51FF;
+  background-color: #black;
   border: 1px solid #F5FEDC;
   border-radius: 8px;
   padding: 10px;
@@ -66,15 +66,15 @@ h1 {
 }
 
 .user-msg {
-  background-color: #F296FF;
-  color: #E52EFF;
+  background-color: #white;
+  color: #black;
   align-self: flex-end;
   border-bottom-right-radius: 3px;
 }
 
 .alpaca-msg {
-  background-color: #ADC7FE;
-  color: #2351B1;
+  background-color: #white;
+  color: #black;
   align-self: flex-start;
   border-bottom-left-radius: 3px;
 }
@@ -90,16 +90,16 @@ h1 {
   border: none;
   border-radius: 5px 0 0 5px;
   font-size: 1rem;
-  background-color: #333;
-  color: #fff;
+  background-color: #white;
+  color: #black;
 }
 
 
 #sendBtn {
   padding: 10px 15px;
   border: none;
-  background-color: #38004C;
-  color: #EBE5ED;
+  background-color: #black;
+  color: #white;
   font-weight: bold;
   border-radius: 0 5px 5px 0;
   cursor: pointer;
