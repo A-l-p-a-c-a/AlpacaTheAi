@@ -4,7 +4,7 @@
   height: 100%;
   margin: 0;
   overscroll-behavior-y: contain; /* stop pull-to-refresh*/
-  background: ##3300FF;
+  background: ##000000;
   color: ##B035F8;
   margin: 0;
   padding: 0;
@@ -76,6 +76,15 @@
     gap: 10px; /* Adjust the gap between items */
 }
 
+  .container {
+    display: flex;
+    width: 1000px;
+   height: 2000px;
+   background-color: #aa00ff; /* Set the background color for your grid items */
+    border: 15px #ff00aa; /* Add border for clarity */
+    padding: 20px; /* Add padding for spacing */
+   
+  }
 .main-container {
   margin: 3px auto;
   width: 800x;
@@ -170,14 +179,7 @@ button {
   transition: 0.2s;
 }
 
-  .container {
-    display: flex;
-    width: 1000px;
-   height: 2000px;
-   background-color: #aa00ff; /* Set the background color for your grid items */
-    border: 15px #ff00aa; /* Add border for clarity */
-    padding: 20px; /* Add padding for spacing */
-  }
+
 
 
 /* Other styles for your text or objects can /* Drawing board styling 
