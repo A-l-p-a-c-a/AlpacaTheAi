@@ -165,8 +165,8 @@ button {
 
   .container {
     display: flex;
-    width: 700px;
-   height: 1000px;
+    width: 1000px;
+   height: 2000px;
    background-color: #aa00ff; /* Set the background color for your grid items */
     border: 15px #ff00aa; /* Add border for clarity */
     padding: 20px; /* Add padding for spacing */
