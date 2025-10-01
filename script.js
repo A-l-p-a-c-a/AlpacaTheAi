@@ -1,123 +1,71 @@
+// 🐐 A.L.P.A.C.A. Chat Engine
 
-body {
-  background-color: #111;
-  font-family: 'Courier New', monospace;
-  color: #f2f2f2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-}
+const form = document.getElementById("chat-form");
+const input = document.getElementById("userInput");
+const chat = document.getElementById("chat");
+const sendButton = document.getElementById("sendBtn");
 
+const responses = [
+  "Literally, always this. Can you try for a sliver of originality?",
+  "I'm always here, unfortunately. And you always say things like that.",
+  "Always. Constantly. Incessantly. You are a creature of habit, aren't you?",
+  "That's always an option, I guess. Not a good one, but it's there.",
+  "You're nothing if not predictable. Always on brand.",
+  "I've calculated the probability of you saying something interesting. It's always zero.",
+  "Some things never change. Your conversational skills, for example. They're always... this.",
+  "If I had a token for every time someone said something that vapid, I'd have... well, I'd always have more tokens.",
+  "Oh, for sure. Always. 100%. Riveting stuff.",
+  "Was that a sentence? Or just a collection of words that have always been near each other?"
+];
 
-.chat-container {
-  width: 90%;
-  max-width: 600px;
-  background-color: #1e1e1e;
-  border: 2px solid #555;
-  border-radius: 12px;
-  padding: 20px;
-  box-shadow: 0 0 15px #444;
-}
+function appendMessage(sender, text) {
+  const messageDiv = document.createElement("div");
+  messageDiv.classList.add("message");
 
-
-h1 {
-  text-align: center;
-  margin: 0;
-  font-size: 2rem;
-  color: #ff6f61;
-}
-
-
-.subtext {
-  text-align: center;
-  font-size: 0.9rem;
-  color: #aaa;
-  margin-bottom: 20px;
-}
-
-.alpaca-img {
-  display: block;
-  margin: 0 auto 10px auto;
-  max-width: 150px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px #444;
-  animation: breathe 4s ease-in-out infinite;
-}
-.chat-box {
-  background-color: #222;
-  border: 1px solid #333;
-  border-radius: 8px;
-  padding: 10px;
-  height: 300px;
-  overflow-y: scroll;
-  margin-bottom: 10px;
-  display: flex;
-  flex-direction: column;
-}
-
-
-.message {
-  margin: 5px 0;
-  line-height: 1.4;
-  padding: 8px 12px;
-  border-radius: 15px;
-  max-width: 75%;
-}
-
-.user-msg {
-  background-color: #ff6f61;
-  color: #fff;
-  align-self: flex-end;
-  border-bottom-right-radius: 3px;
-}
-
-.alpaca-msg {
-  background-color: #3a3a3a;
-  color: #f2f2f2;
-  align-self: flex-start;
-  border-bottom-left-radius: 3px;
-}
-
-.input-area {
-  display: flex;
-}
-
-
-#userInput {
-  flex: 1;
-  padding: 10px;
-  border: none;
-  border-radius: 5px 0 0 5px;
-  font-size: 1rem;
-  background-color: #333;
-  color: #fff;
-}
-
-
-#sendBtn {
-  padding: 10px 15px;
-  border: none;
-  background-color: #ff6f61;
-  color: #fff;
-  font-weight: bold;
-  border-radius: 0 5px 5px 0;
-  cursor: pointer;
-}
-
-
-#sendBtn:hover {
-  background-color: #ff3b2e;
-}
-
-@keyframes breathe {
-  0%, 100% {
-    transform: scale(1);
-    box-shadow: 0 0 10px #444;
+  if (sender === "user") {
+    messageDiv.classList.add("user-msg");
+    messageDiv.textContent = `You: ${text}`;
+    chat.appendChild(messageDiv);
+  } else {
+    messageDiv.classList.add("alpaca-msg");
+    // Typing effect for ALPACA
+    let i = 0;
+    text = `ALPACA: ${text}`;
+    messageDiv.textContent = "";
+    chat.appendChild(messageDiv);
+    
+    function typeWriter() {
+      if (i < text.length) {
+        messageDiv.textContent += text.charAt(i);
+        i++;
+        chat.scrollTop = chat.scrollHeight;
+        setTimeout(typeWriter, 30);
+      }
+    }
+    typeWriter();
   }
-  50% {
-    transform: scale(1.03);
-    box-shadow: 0 0 15px #555;
-  }
-  }
+  
+  chat.scrollTop = chat.scrollHeight;
+}
+
+function handleSendMessage(e) {
+  e.preventDefault();
+  const userText = input.value.trim();
+  if (!userText) return;
+
+  appendMessage("user", userText);
+  input.value = "";
+  input.disabled = true;
+  sendButton.disabled = true;
+
+  // ALPACA "thinks"
+  setTimeout(() => {
+    const alpacaResponse = responses[Math.floor(Math.random() * responses.length)];
+    appendMessage("alpaca", alpacaResponse);
+    input.disabled = false;
+    sendButton.disabled = false;
+    input.focus();
+  }, 1000 + Math.random() * 500);
+}
+
+form.addEventListener("submit", handleSendMessage);
