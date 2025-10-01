@@ -89,7 +89,7 @@
   margin: 3px auto;
   width: 800x;
   height:1700px;
-  background: #0F1;
+  background: ##0000cc;
   border: 3px dashed ##022B6D;
  justify-content: center;
   align-items: center;
@@ -117,7 +117,7 @@
 #messages {
   height: 500px;   /* BIGGER chat window */
   overflow-y: auto;
-  background: #136;
+  background: ##cc0000;
   padding: 15px;
   border: 2px solid ##74ee15;
   margin-bottom: 15px;
