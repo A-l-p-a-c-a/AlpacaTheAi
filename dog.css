@@ -11,6 +11,7 @@ body {
 .page-container {
   display: flex;
   flex-direction: column;
+  width: 1000px;
   align-items: center;
   background-color: #2e2e2e; /* dark grey background like fatigues */
   color: #000000;
