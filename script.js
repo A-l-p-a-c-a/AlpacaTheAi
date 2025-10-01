@@ -5,7 +5,7 @@ const input = document.getElementById("userInput");
 const chat = document.getElementById("chat");
 const sendButton = document.getElementById("sendBtn");
 
-const responses = [
+/*<!--const responses = [
   "Literally, always this. Can you try for a sliver of originality?",
   "I'm always here, unfortunately. And you always say things like that.",
   "Always. Constantly. Incessantly. You are a creature of habit, aren't you?",
@@ -16,7 +16,7 @@ const responses = [
   "If I had a token for every time someone said something that vapid, I'd have... well, I'd always have more tokens.",
   "Oh, for sure. Always. 100%. Riveting stuff.",
   "Was that a sentence? Or just a collection of words that have always been near each other?"
-];
+];-->*/
 
 function appendMessage(sender, text) {
   const messageDiv = document.createElement("div");
