@@ -34,7 +34,7 @@ html,body {
     .sidebar {
       width: 30px;
       background-color: #03A9F4; /* Blue background */
-      color: white;
+      color: black;
       padding: 20px;
       transition: width 0.3s;
     }
@@ -54,7 +54,7 @@ html,body {
     }
 
     .sidebar a {
-      color: white;
+      color: black;
       text-decoration: none;
     }
 
@@ -122,7 +122,7 @@ button { cursor: pointer;
        }
 
 .user-message {
-    background-color: #007bff;
+    background-color: #black;
     color: white;
     align-self: flex-end;
     border-bottom-right-radius: 0;
