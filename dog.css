@@ -161,6 +161,8 @@ button {
     display: grid;
  width:800px;
  height: 1700px;
+ justify-content: center;
+  align-items: center;
  grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns */
     gap: 10px; /* Adjust the gap between items */
   }
