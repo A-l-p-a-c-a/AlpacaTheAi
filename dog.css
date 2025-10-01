@@ -117,7 +117,7 @@
 #messages {
   height: 500px;   /* BIGGER chat window */
   overflow-y: auto;
-  background: ##000033;
+  background: ##ff0000;
   padding: 15px;
   border: 2px solid ##74ee15;
   margin-bottom: 15px;
