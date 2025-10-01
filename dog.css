@@ -1,185 +1,57 @@
 /*dog.css*/
-html,body {
-  font-family: 'Verdana', sans-serif;
-  height: 100%;
-  margin: 0;
-  overscroll-behavior-y: contain; /* stop pull-to-refresh*/
-  background: ##3300FF;
-  color: ##B035F8;
-  margin: 0;
-  padding: 0;
-  text-align: center;
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="dog.css">
 
-}
+</head>
+<body>
 
+<div class="page-container">
+  <!-- Background color container -->
+  <div class="grid-container">
+    <div class="container">I
+    <div class="main-container">
+    <p style="text-align: center;"></p><h2></h2><p></p>he&gt;🥀 ÝÝÝ 🦙<p></p>
+    <div class="chatbox">
+      <div id="messages"><div><strong>YOU:</strong> Hello</div><div><strong>ALPACA:</strong> Hello! How can I help you today?</div><div><strong>YOU:</strong> Hello</div><div><strong>ALPACA:</strong> Hello! How can I help you today? 😊</div></div>
+      <form id="chatForm" autocomplete="off">
+        <input type="text" id="userInput" placeholder="Talk to ALPACA..." required="">
+        <button type="submit">Send</button>
+      </form>
+  </div></div>
+   <!-- <div class="container">. <div class="sidebar">
+      <h2>Sidebar</h2>.<div>-->
+    <!--<div class="container"></div> <!--<div class="drawing-board">
+      <canvas id="canvas"></canvas>
+    </div>
+    <div class="container">   <div class="sidebar">
+      <h2>Sidebar</h2></div>
+    <!--<div class="container">Item 5</div>
+    <div class="container">Item 6</div>
+    <div class="container"></div>
+    <div class="container"></div>
+    <div class="container"></div>
+  </div>-->
 
-/* Background image behind everything */
-.chat-wrap {
-  position: relative;
-  min-height: 100vh;
-  padding: 24px;
-  display: grid;
-  place-items: center;
-  overflow: hidden;
-}
-.chat-wrap::before {
-  content: "";
-  position: absolute; inset: 0;
-  background:
-  linear-gradient(to bottom, rgba(0,0,0,.55), rgba(0,0,0,.55)),
-    url("your-image.jpg") center/cover no-repeat;
-  z-index: 0;
-}
+  <!-- Other text or objects can be added here -->
+  <p>This is some text around the grid.</p>
+</div>
 
-    .sidebar {
-      width: 30px;
-      background-color: #03A9F4; /* Blue background */
-      color: black;
-      padding: 20px;
-      transition: width 0.3s;
-    }
-
-    .sidebar:hover {
-      width: 150px;
-    }
-
-    .sidebar ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-    }
-
-    .sidebar li {
-      margin-bottom: 10px;
-    }
-
-    .sidebar a {
-      color: black;
-      text-decoration: none;
-    }
-
-/* Main chat container */
-}
-.main-container {
-  margin: 20px auto;
-  width: 1000px;
-  height:600px;
-  background: #0F1;
-  border: 3px dashed ##022B6D;
-  padding: 30px;
-  border-radius: 8px;
-}
+<img src="https://a-l-p-a-c-a.github.io/AlpacaTheAi/images/sergent.png">
+  
 
 
-/* Chatbox BIGGER */
-/* The chat box */
-.chat-box {
-  position: relative;
-  z-index: 1;
-  width: 700px;
-  height: 600px;
-  overflow: hidden;
-  border-radius: 20px;
-  border: 2px solid rgba(255,255,255,.12);
-  box-shadow: 0 10px 30px rgba(0,0,0,.5);
-  background: rgba(10, 20, 40, .8);
-  text-align: left;
-  backdrop-filter: blur(6px);
-}
-#messages {
-  height: 500px;   /* BIGGER chat window */
-  overflow-y: auto;
-  background: #136;
-  padding: 15px;
-  border: 2px solid ##74ee15;
-  margin-bottom: 15px;
-  font-family: monospace;
-  font-size: 16px;
-  color: ###FF0FBF;
-}
-.chat-body {
-  height: min(60vh, 520px);
-  overflow: auto;
-  -webkit-overflow-scrolling: touch;
-  padding: 16px;
-}
 
-.chat-footer {
-  position: sticky; bottom: 0;
-  display: grid; grid-template-columns: 1fr auto; gap: 8px;
-  background: rgba(15, 25, 45, .96);
-  padding: 12px 16px;
-}
+</div></div></body></html></section>
+  
 
-input, button {
-  font: inherit;
-  padding: 10px 12px;
-  border-radius: 12px;
-  border: 0;
-}
+  <!-- Other text or objects can be added here -->
+  <p>This is some text around the grid.</p>
+</div>
+  <script src="style.js"></script>
+<img src="images/sergent.png">
+  <script src="front.js"></script>
 
-button { cursor: pointer;   
-       }
-
-.user-message {
-    background-color: #black;
-    color: white;
-    align-self: flex-end;
-    border-bottom-right-radius: 0;
-}
-
-.ai-message {
-    background-color: #e9ecef;
-    color: #333;
-    align-self: flex-start;
-    border-bottom-left-radius: 0;
-}
-#chatForm {
-  display: flex;
-}
-
-button {
-  background: #C70FFF;
-  color: #000;
-  font-weight: bold;
-  border: none;
-  cursor: pointer;
-  padding: 12px 25px;
-  transition: 0.2s;
-}
-
-.page-container {
-    background-color: ##00aaff; /* Set your desired background color */
-    padding: 20px; /* Adjust as needed */
-  }
-
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns */
-    gap: 10px; /* Adjust the gap between items */
-  }
-
-  .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #aa00ff; /* Set the background color for your grid items */
-    border: 15px #ff00aa; /* Add border for clarity */
-    padding: 20px; /* Add padding for spacing */
-  }
-
-  /* Other styles for your text or objects can /* Drawing board styling 
-.drawing-board {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 900vh;  /* Full viewport height 
-  width: 800px;
-  background-color: white; White background for the drawing area 
-}
-
-#canvas {
-  border: 1px solid #ddd; Optional: Border around the canvas 
-  background-color: white; /* Background color for the canvas */
-}
-
+</body>
