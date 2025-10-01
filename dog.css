@@ -82,6 +82,8 @@
   height:1700px;
   background: #0F1;
   border: 3px dashed ##022B6D;
+ justify-content: center;
+  align-items: center;
   padding: 30px;
   border-radius: 8px;
 }
