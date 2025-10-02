@@ -59,13 +59,30 @@ h1, h2 {
   padding: 10px;
   min-height: 200px;
   height: 300px;
-  overflow-y: auto;
+  display: flex;
+  flex-direction: column; /* stack messages + form vertically */
   font-size: 14px;
   color: #f4f4f4;
 
   /* resizable */
   resize: both;
-  overflow: auto;
+  overflow: hidden; /* stop double scrollbars */
+}
+
+#messages {
+  flex: 1;                /* take up remaining space */
+  overflow-y: auto;        /* scroll only this section */
+  padding-right: 5px;      /* breathing room */
+}
+
+#messages div {
+  margin-bottom: 10px;
+}
+
+#chatForm {
+  display: flex;
+  margin-top: 10px;
+  flex-shrink: 0; /* keep form pinned at bottom */
 }
 
 #messages div {
